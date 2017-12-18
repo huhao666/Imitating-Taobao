@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>淘宝注册</title>
+		<link rel="stylesheet" href="../css/public.css"/>
+		<link rel="stylesheet" href="../css/register.css"/>
+	<script type="text/javascript" src="../js/require.js" data-main="../js/style.js" defer async="true"></script>
+	</head>
+	<body>
+	<!--头部导航栏-->
+		<div class='cover'>
+			<div class="wrapper">
+				<ul class='cover-l'>
+					<li class='nav-li1'><a href=""><span class='cover-l1 land'>中国大陆</span><span class="site-nav-icon"></span></a>
+						<ul class="navList">
+							<li class="site-nav-region-item J_RegionItem" role="option">全球</li>
+							<li class="site-nav-region-item J_RegionItem" role="option">中国大陆</li>
+							<li class="site-nav-region-item J_RegionItem" role="option">香港</li>
+							<li class="site-nav-region-item J_RegionItem" role="option">台湾</li>
+							<li class="site-nav-region-item J_RegionItem" role="option">澳门</li>
+							<li class="site-nav-region-item J_RegionItem" role="option">韩国</li>
+							<li class="site-nav-region-item J_RegionItem" role="option">马来西亚</li>
+							<li class="site-nav-region-item J_RegionItem" role="option">澳大利亚</li>
+							<li class="site-nav-region-item J_RegionItem" role="option">新加坡</li>
+							<li class="site-nav-region-item J_RegionItem" role="option">新西兰</li>
+							<li class="site-nav-region-item J_RegionItem" role="option">加拿大</li>
+							<li class="site-nav-region-item J_RegionItem" role="option">美国</li>
+							<li class="site-nav-region-item J_RegionItem" role="option">日本</li>
+						</ul>
+					</li>					
+					<li class="cover-login1"><a href="login.html"><span class='cover-l1 orange'>亲，请登录</span></a><a href="register.html"><span class='cover-l1 cover-l12'>免费注册</span></a></li>
+					<li class="cover-login2"><span></span><a href="javascript:;">退出</a></li>
+					<li><a href=""><span>手机逛淘宝</span></a></li>
+				</ul>
+				
+				<ul class='cover-r'>
+					<li class='nav-li2'><a href=""><span class='cover-l1 cover-font'>我的淘宝</span><span class="site-nav-icon"></span></a>
+						<div class="nav-menu cover-1">
+							<a href="//trade.taobao.com/trade/itemlist/list_bought_items.htm" target="_top">已买到的宝贝</a>
+							<a href="//www.taobao.com/markets/footmark/tbfoot" target="_top">我的足迹</a>
+						</div>
+					</li>	
+					<li><a href=""><span class="site-nav-icon cover-l2 orange"></span><span class='cover-font'>购物车</span><strong class="h cover-l1" id="J_MiniCartNum">0</strong><span class="site-nav-icon"></span></a></li>
+					<li class='nav-li3'><a href=""><span class="site-nav-icon cover-l2 cover-font"></span><span class='cover-l1 cover-font'>收藏夹</span><span class="site-nav-icon"></span></a>
+						<div class="nav-menu cover-2">
+							<a href="//shoucang.taobao.com/item_collect.htm" target="_top">收藏的宝贝</a>
+							<a href="//shoucang.taobao.com/shop_collect_list.htm" target="_top">收藏的店铺</a>
+						</div>
+					</li>					
+					<li><a href=""><span class='cover-l1 cover-font'>商品分类</span></a></li>
+					<li><a href="">|</li>
+					<li class='nav-li4'><a href=""><span class='cover-l1 cover-font'>卖家中心</span><span class="site-nav-icon"></span></a>
+						<div class="nav-menu cover-3">
+							<a href="//mai.taobao.com/seller_admin.htm" target="_top">免费开店</a>
+							<a href="//trade.taobao.com/trade/itemlist/list_sold_items.htm" target="_top">已卖出的宝贝</a>
+							<a href="//sell.taobao.com/auction/goods/goods_on_sale.htm" target="_top">出售中的宝贝</a>
+							<a href="//fuwu.taobao.com/?tracelog=tbdd" target="_top">卖家服务市场</a>
+							<a href="//daxue.taobao.com/" target="_top">卖家培训中心</a>
+							<a href="//healthcenter.taobao.com/home/health_home.htm" target="_top">体检中心</a>
+							<a href="//infob.taobao.com/help" target="_top">问商友</a>
+						</div>
+					</li>					
+					<li class='nav-li5'><a href=""><span class='cover-l1 cover-font'>联系客服</span><span class="site-nav-icon"></span></a>
+						<div class="nav-menu cover-4">
+							<a href="https://consumerservice.taobao.com/online-help" target="_top">消费者客服</a>
+							<a href="//helpcenter.taobao.com/index?from=high" target="_top">卖家客服</a>
+						</div>
+					</li>	
+					<li><a href=""><span class="site-nav-icon cover-l2 orange"></span><span class='cover-l1 cover-font'>网站导购</span><span class="site-nav-icon"></span></a></li>
+				</ul>
+			</div>
+		</div>
+		
+			
+		<!--头部-->
+		<div class="register_main">
+			<!--背景-->
+			<div class="register_content">
+				<h4 class="rc_title">淘宝注册</h4>
+				<div class="rc_form">
+					<form action="../php/reginster.php" method="post" id="form"> 
+					<ul class="bdyz">
+						<!--表单验证-->
+							<li>
+								<div class="bdyz_same">
+									<input class="same_input" type="text" id="username" name="username" placeholder="请输入手机号">
+									<div class="regist_tip a1">(必填)</div>
+								</div>
+							</li>
+							<li>
+								<div class="bdyz_same">
+									<input class="same_input" type="text" id="email" name="email" placeholder="请输入邮箱">
+									<div class="regist_tip a3">(必填)</div>
+								</div>
+							</li>
+							<li>
+								<div class="bdyz_same">
+									<input class="same_input" type="text" id="password" name="password" placeholder="请输入密码">
+									<div class="regist_tip a4">6-20个大小写英文字母符号或数字的组合</div>
+								</div>
+							</li>
+							<li>
+								<div class="bdyz_same">
+									<input class="same_input" type="text" value="" id="repassword" placeholder="确认密码">
+									<div class="regist_tip a5">请再次输入密码</div>
+								</div>
+							</li>
+							<li>
+								<div class="bdyz_agree">点击注册，表示您同意
+									<a href="# target=" _blank ">《服务协议及隐私声明》</a></div>
+								<input type="submit" class="bdyz_agree_btn " value="同意协议并注册" name="submit" />
+							</li>
+						</ul>
+						</form>
+					</div>
+				</div>					
+		</div>
+		<div class="footer">
+				<img src="../img/footer.png" alt="底部栏" />	
+		</div>
+	</body>
+</html>
